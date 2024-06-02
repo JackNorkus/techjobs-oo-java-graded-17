@@ -39,8 +39,8 @@ public class JobTest {
     @Test
     public void testToStringStartsAndEndsWithNewLine() {
         Job job = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
-        assertEquals(System.lineSeparator().charAt(0), job.toString().charAt(0));
-        assertEquals(System.lineSeparator().charAt(1), job.toString().charAt(job.toString().length() - 1)); //must use -2 here since the length of the line separator is two characters on Windows
+        assertEquals(true, job.toString().endsWith(System.lineSeparator()));
+        assertEquals(true, job.toString().startsWith(System.lineSeparator()));
     }
 
     @Test
