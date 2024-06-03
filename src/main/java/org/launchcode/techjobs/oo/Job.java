@@ -98,6 +98,25 @@ public class Job {
 
     @Override
     public String toString() {
+        if (getName().isEmpty()) {
+            setName("Data not available");
+        }
+        if (Objects.equals(getEmployer().toString(), "")) {
+            Employer badData = new Employer("Data not available");
+            setEmployer(badData);
+        }
+        if (Objects.equals(getLocation().toString(), "")) {
+            Location badData = new Location("Data not available");
+            setLocation(badData);
+        }
+        if (Objects.equals(getPositionType().toString(), "")) {
+            PositionType badData = new PositionType("Data not available");
+            setPositionType(badData);
+        }
+        if (Objects.equals(getCoreCompetency().toString(), "")) {
+            CoreCompetency badData = new CoreCompetency("Data not available");
+            setCoreCompetency(badData);
+        }
         return System.lineSeparator() + "ID: " + getId() + "\n" +
                 "Name: " + getName() + "\n" +
                 "Employer: " + getEmployer() + "\n" +
