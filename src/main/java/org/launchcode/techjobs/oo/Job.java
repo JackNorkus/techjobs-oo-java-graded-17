@@ -98,7 +98,7 @@ public class Job {
 
     @Override
     public String toString() {
-        if (getName().isEmpty()) {
+        if (Objects.equals(getName(), "")) {
             setName("Data not available");
         }
         if (Objects.equals(getEmployer().toString(), "")) {
