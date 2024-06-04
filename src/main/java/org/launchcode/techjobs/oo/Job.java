@@ -101,7 +101,12 @@ public class Job {
         if (Objects.equals(getName(), "")) {
             setName("Data not available");
         }
-        if (Objects.equals(getEmployer().toString(), "") || getEmployer() == null) {
+        if (getEmployer() != null) {
+            if (Objects.equals(getEmployer().toString(), "")) {
+                Employer badData = new Employer("Data not available");
+                setEmployer(badData);
+            }
+        } else {
             Employer badData = new Employer("Data not available");
             setEmployer(badData);
         }

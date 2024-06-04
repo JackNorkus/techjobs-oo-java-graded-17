@@ -75,7 +75,7 @@
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.TestTaskFive.testToStringContainsCorrectLabelsAndData">
+  <component name="RunManager" selected="Gradle.TestTaskFive.testToStringHandlesEmptyField">
     <configuration name="JobTest.testToStringHandlesEmptyField" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -218,8 +218,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.TestTaskFive.testToStringContainsCorrectLabelsAndData" />
         <item itemvalue="Gradle.TestTaskFive.testToStringHandlesEmptyField" />
+        <item itemvalue="Gradle.TestTaskFive.testToStringContainsCorrectLabelsAndData" />
         <item itemvalue="Gradle.JobTest.testToStringHandlesEmptyField" />
         <item itemvalue="Gradle.TestTaskFive" />
         <item itemvalue="Gradle.TestTaskThree" />
