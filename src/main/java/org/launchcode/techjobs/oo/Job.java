@@ -110,18 +110,34 @@ public class Job {
             Employer badData = new Employer("Data not available");
             setEmployer(badData);
         }
-        if (Objects.equals(getLocation().toString(), "") || getLocation() == null) {
+        if (getLocation() != null) {
+            if (Objects.equals(getLocation().toString(), "")) {
+                Location badData = new Location("Data not available");
+                setLocation(badData);
+            }
+        } else {
             Location badData = new Location("Data not available");
             setLocation(badData);
         }
-        if (Objects.equals(getPositionType().toString(), "") || getPositionType() == null) {
+        if (getPositionType() != null) {
+            if (Objects.equals(getPositionType().toString(), "")) {
+                PositionType badData = new PositionType("Data not available");
+                setPositionType(badData);
+            }
+        } else {
             PositionType badData = new PositionType("Data not available");
             setPositionType(badData);
         }
-        if (Objects.equals(getCoreCompetency().toString(), "") || getCoreCompetency() == null) {
+        if (getCoreCompetency() != null) {
+            if (Objects.equals(getCoreCompetency().toString(), "")) {
+                CoreCompetency badData = new CoreCompetency("Data not available");
+                setCoreCompetency(badData);
+            }
+        } else {
             CoreCompetency badData = new CoreCompetency("Data not available");
             setCoreCompetency(badData);
         }
+
         return System.lineSeparator() + "ID: " + getId() + "\n" +
                 "Name: " + getName() + "\n" +
                 "Employer: " + getEmployer() + "\n" +
