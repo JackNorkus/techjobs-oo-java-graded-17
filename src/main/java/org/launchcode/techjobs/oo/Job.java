@@ -101,19 +101,19 @@ public class Job {
         if (Objects.equals(getName(), "")) {
             setName("Data not available");
         }
-        if (Objects.equals(getEmployer().toString(), "")) {
+        if (Objects.equals(getEmployer().toString(), "") || getEmployer() == null) {
             Employer badData = new Employer("Data not available");
             setEmployer(badData);
         }
-        if (Objects.equals(getLocation().toString(), "")) {
+        if (Objects.equals(getLocation().toString(), "") || getLocation() == null) {
             Location badData = new Location("Data not available");
             setLocation(badData);
         }
-        if (Objects.equals(getPositionType().toString(), "")) {
+        if (Objects.equals(getPositionType().toString(), "") || getPositionType() == null) {
             PositionType badData = new PositionType("Data not available");
             setPositionType(badData);
         }
-        if (Objects.equals(getCoreCompetency().toString(), "")) {
+        if (Objects.equals(getCoreCompetency().toString(), "") || getCoreCompetency() == null) {
             CoreCompetency badData = new CoreCompetency("Data not available");
             setCoreCompetency(badData);
         }
